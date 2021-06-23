@@ -1,18 +1,18 @@
 #include "holberton.h"
 
 /**
- * main - escribir el alfabeto
- *
- * Return: siempre cero si coincide
- */
+* print_alphabet - imprime el alfabeto en miniscula
+*
+* Return: void.
+*/
 
-void print_alphabet(void);
+void print_alphabet(void)
 {
-it i;
+	int i;
 
-for (i = 97; i < 123; i++)
-{
-_putchar(i);
-}
-_putchar('\n');
+	for (i = 97; i < 123; i++)
+		{
+		_putchar(i);
+		}
+		_putchar('\n');
 }
