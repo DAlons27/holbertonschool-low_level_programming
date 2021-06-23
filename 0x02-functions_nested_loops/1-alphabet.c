@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * main escribir el alfabeto
+ * main - escribir el alfabeto
  *
  * Return: siempre cero si coincide
  */
