@@ -1,12 +1,11 @@
 #include "holberton.h"
 
 /**
- * _isalpha - compara numeros
+ * print_sign - compara numeros
  * @n: el caracterer a comparar
  * Return: 1 si es positivo, 0 si es cero, -1 si es negativo
  */
-
-int print_sign(int n);
+int print_sign(int n)
 {
 if (n > 0)
 {
