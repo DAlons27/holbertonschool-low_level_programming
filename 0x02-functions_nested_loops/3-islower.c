@@ -2,7 +2,7 @@
 
 /**
  * _islower - para buscar caracteres en minuscula
- *
+ * @c: el caractere para verificar
  * Return: 1 si es caracter minuscula y 0 de lo cotrario
  */
 
