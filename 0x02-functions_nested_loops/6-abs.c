@@ -1,4 +1,4 @@
-#include "holberton.hs"
+#include "holberton.h"
 
 /**
  * _abs - calcula el valor absoluto
