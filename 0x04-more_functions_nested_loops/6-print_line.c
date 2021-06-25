@@ -1,7 +1,8 @@
 #include "holberton.h"
 
 /**
- * more_numbers - prints 10 times the numbers, from 0 to 14
+ * print_line - imprime lineas
+ * @n: es el numero de lineas
  * followed by a new line
  */
 
