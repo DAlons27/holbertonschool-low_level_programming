@@ -1,12 +1,11 @@
 #include "holberton.h"
 
 /**
- * _isupper - busca caracteres en mayuscula
- * @c: el caracterer a verificar
- * Return: 1 si es mayuscula, 0 de lo contrario
+ * _isupper - checks for uppercase character
+ * @c: the character to be checked
+ * Return: 1 if c is uppercase, 0 otherwise
  */
-
-int _isupper(int c);
+int _isupper(int c)
 {
-return (c >= 'A' && c <= 'Z');
+	return (c >= 'A' && c <= 'Z');
 }
