@@ -2,7 +2,7 @@
 
 /**
  * print_number - imprime un numero entero
- * @n: entero a imprimir
+ * @n: entero a imprimir.
  */
 
 void print_number(int n)
