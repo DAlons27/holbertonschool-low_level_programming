@@ -3,7 +3,7 @@
 
 /**
  * *malloc_checked - asigna memoria usando malloc
- * @b: número de bytes para asignar
+ * @b: el numero de bytes para asignar
  *
  * Return: un puntero a la memoria asignada
  */
