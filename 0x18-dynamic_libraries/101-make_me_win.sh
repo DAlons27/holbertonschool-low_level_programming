@@ -1,3 +1,3 @@
 #!/bin/bash
-wget /*TODO*/
-export LD_PRELOAD=$PWD/../inject.so
+wget -P /tmp https://github.com/DAlons27/holbertonschool-low_level_programming/blob/main/0x18-dynamic_libraries/inject.so
+export LD_PRELOAD=/tmp/inject.so
