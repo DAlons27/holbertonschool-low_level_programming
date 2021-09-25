@@ -1,7 +1,7 @@
-#ifndef HOLBERTONMAIN_H
-#define HOLBERTONMAIN_H
+#ifndef _MAIN_H
+#define _MAIN_H
 
-#include <unistd.h>
+#include <stdlib.h>
 
 int _putchar(char c);
 int _islower(int c);
