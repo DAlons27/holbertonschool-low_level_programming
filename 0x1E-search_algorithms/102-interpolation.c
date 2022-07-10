@@ -1,38 +1,45 @@
 #include "search_algos.h"
+
 /**
- * interpolation_search - searches in an array using interpolation search
- * @array : A vector is a one-dimensional array
- * @size : size is the number of elements in array
- * @value : value is the value to search for
- * Return: the first index where value is located
+ * interpolation_search - Searches for a value in a sorted array of
+ *	integers using the Interpolation search algorithm.
+ *
+ * @array: The pointer to the first element of the array.
+ * @size: The number of elements in the array.
+ * @value: The value to search for.
+ * Return: The first index where value is located.
  */
 int interpolation_search(int *array, size_t size, int value)
 {
-	int low = 0;
-	int high = size - 1;
-	int mid;
+	size_t low = 0, high = 0, mid = 0;
 
-	while ((array[high] != array[low]) && (value >= array[low])
-			&& (value <= array[high]))
+	if (array == NULL || size == 0)
+		return (-1);
+
+	high = size - 1;
+
+	while ((array[high] != array[low]) &&
+		array[low] <= value && array[high] >= value)
 	{
-		mid = low + ((value - array[low]) * (high - low) /
-			(array[high] - array[low]));
-		printf("Value checked array[%d] = [%d]\n", mid, array[mid]);
+		mid = low + (((double)(high - low) / (array[high] - array[low])) *
+			(value - array[low]));
+
+		printf("Value checked array[%ld] = [%d]\n", mid, array[mid]);
+
 		if (array[mid] < value)
 			low = mid + 1;
-		else if (value < array[mid])
+		else if (array[mid] > value)
 			high = mid - 1;
 		else
 			return (mid);
 	}
 
 	if (value == array[low])
-	{
 		return (low);
-	}
-	else
-	{
-		printf("Value checked array[%d] is out of range\n", value);
-		return (-1);
-	}
+
+	/* Calculate "mid" for printing only (not necessary) */
+	mid = low + (((double)(high - low) / (array[high] - array[low])) *
+			(value - array[low]));
+	printf("Value checked array[%ld] is out of range\n", mid);
+	return (-1);
 }
